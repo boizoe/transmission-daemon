@@ -1,4 +1,4 @@
-FROM arm64v8/alpine:3.13
+FROM alpine:3.13
 
 RUN apk add --no-cache --update \
     transmission-daemon
