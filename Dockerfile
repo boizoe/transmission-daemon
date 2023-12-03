@@ -1,6 +1,7 @@
 FROM alpine
 
 RUN apk add --no-cache --update \
+    transmission-cli \
     transmission-daemon
 
 EXPOSE 9091 59863 59863/udp
