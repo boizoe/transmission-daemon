@@ -1,10 +1,10 @@
-name: build and push a container image
+name: Trigger build and push a container image
 
 on:
   workflow_dispatch:
     inputs:
       my_input:
-        description: Manually trigger
+        description: Trigger from WebUI
         required: false
         type: string
 
