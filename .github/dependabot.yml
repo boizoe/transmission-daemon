@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # 1. Keep GitHub Actions up to date (this handles your Docker build versions)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      # Optional: Bundle all action updates into a single Pull Request
+      # to avoid getting 5 different PRs for every version bump.
+      github-actions-group:
+        patterns:
+          - "*"
+
+  # 2. If you want to keep your Dockerfile base images updated too:
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
